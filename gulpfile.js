@@ -29,7 +29,7 @@ function css(cb) {
 
 function js(cb) {
   src("./project/js/*.js")
-    .pipe(concat())
+    .pipe(concat('main.js'))
     .pipe(minify())
     .pipe(dest("./public/js"))
     .pipe(livereload());
