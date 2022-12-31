@@ -1,2 +1,15 @@
 .sidebar 
-  h1.admin-profile-name Mhmoud
+  .sidebar-logo.text-center
+    h1.admin-profile-name.fs-4.mx-0.my-2 Mhmoud
+
+  .sidebar-content
+    ul.sidebar-main-links.list-unstyled
+      li: a(href="#") HomePage
+      li: a(href="#") buttons
+        ul.level-two-links.list-unstyled
+          li: a(href="#") Overview
+          li: a(href="#") Edit
+
+  .sidebar-footer
+    .toggle-icon
+      i.fa-solid.fa-right-left
